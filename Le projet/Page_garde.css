@@ -2,6 +2,68 @@ a{
 	text-decoration : none;
 	color : black;
 }
-#h_menu p ul{
-	list-style-type : none;
+header{
+	display : flex;
+	justify-content: space-around;
+	border-bottom: solid black 2px;
+	font-family: 'Lobster', cursive;
+	color:white;
+	text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
+	background-color:black;
+	background-image:url(fond_header_4.jpg);
+	background-size: cover;
+}
+
+ul {
+ padding:0;
+ margin:0;
+ list-style-type:none;
+ }
+li {
+ margin-left:2px;
+ float:left; /*pour IE*/
+ }
+
+ul li{
+ 	 align-items: flex-start;
+ }
+ul li a {
+ display:block;
+ float:left;   
+ width:100px;
+ color:white;
+ text-shadow: black 1px 1px, black -1px 1px, black -1px -1px, black 1px -1px;
+ text-decoration:none;
+ text-align:center;
+ padding:5px;
+ border:2px solid;
+ border-top-right-radius: 50%;
+ border-top-left-radius: 50%;
+ border-color:black;
+ }
+ul li a:hover {
+ background-color:#B8860B;
+ border-color:#A0522D #CD853F #CD853F #A0522D;
+ } 
+#h_recherche{
+	font-size: 200%;
+}
+
+#h_search{
+	display: flex;
+}
+input{
+	background-color: #DCDCDC;
+	border-color:;
+}
+#h_menu{
+	display:flex;
+	
+	align-items: flex-end;
+}
+#h_menu ul{
+	align-items: flex-end;
+}
+body {
+
 }
