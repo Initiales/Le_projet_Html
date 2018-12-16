@@ -12,6 +12,15 @@ header{
 	background-color:black;
 	background-image:url(fond_header_4.jpg);
 	background-size: cover;
+	top: 0;
+	left:0;
+	right: 0;
+	position:absolute;
+	position:fixed;
+	width: 100%;
+	height:10%;
+	z-index: 15;
+
 }
 
 ul {
@@ -21,7 +30,7 @@ ul {
  }
 li {
  margin-left:2px;
- float:left; /*pour IE*/
+ float:left; 
  }
 
 ul li{
@@ -40,6 +49,7 @@ ul li a {
  border-top-right-radius: 50%;
  border-top-left-radius: 50%;
  border-color:black;
+ margin-right: 2%;
  }
 ul li a:hover {
  background-color:#B8860B;
@@ -51,19 +61,36 @@ ul li a:hover {
 
 #h_search{
 	display: flex;
+	margin-left: 4%;
 }
 input{
 	background-color: #DCDCDC;
-	border-color:;
+	margin-top:28%;
+	margin-left: 7%;
 }
 #h_menu{
 	display:flex;
-	
+	margin-right:3.8%;
 	align-items: flex-end;
 }
 #h_menu ul{
 	align-items: flex-end;
 }
 body {
-
+}
+html{
+	background-image:url(fond_header.jpg);
+	background-size: cover;
+	margin:auto;
+	z-index:10;
+}
+#contenu{
+	background-color: #DEB887;
+	z-index:11;
+	width: 75%;
+	position: absolute; 
+  	left: 0; 
+  	right: 0; 
+ 	margin-left: auto; 
+  	margin-right: auto; 
 }
