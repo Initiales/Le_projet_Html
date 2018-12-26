@@ -1,17 +1,17 @@
 Equinoxe - Solstice
 
-Top - Bottom
+Top - Bottom		DONE
 
-Ying - Yang
+Yin - Yang		DONE
 
-Html - Css
+Html - Css		DONE
 
 Passif - Agressif
 
-False - True
+False - True		DONE
 
-Cis - Trans
+Cis - Trans		DONE
 
-Été - hiver
+Été - hiver  		DONE
 
 
