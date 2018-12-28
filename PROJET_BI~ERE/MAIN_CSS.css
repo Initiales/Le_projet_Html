@@ -13,7 +13,6 @@ a{
 	color : black;
 }
 
-
 header{
 	display : flex;
 	justify-content: space-around;
@@ -65,10 +64,11 @@ header{
 	 border-top-left-radius: 50%;
 	 border-color:black;
 	 margin-right: 2%;
+	 transition: all 0.5s ease-out;
  }
 
 
-#h_menu ul li a:hover {
+#h_menu ul li a:hover{
 	 background-color:#ad0b00;
 	 border-color:#A0522D #CD853F #CD853F #A0522D;
  } 
@@ -79,6 +79,7 @@ header{
 	align-items: flex-end;
 	margin-right: 10%;
 }
+
 
 main {
 	background-color: lightgray;
@@ -223,8 +224,144 @@ main {
 }
 
 
+#garde #ligne1 p {
+	background-color: red;
+	width: 50px;
+	height: 50px;
+	margin: auto;
+	margin-left: 250px;
+	margin-top: -330px;
+	padding: 5px;
+	text-align: center;
+	font-size: 30px;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: absolute;
+}
+
+#garde #ligne1 {
+	display: flex;
+	justify-content: space-around;
+	margin-left: 5%;
+	margin-right: 5%;
+	margin-top: 60px;
+}
+
+#garde #logo_left{
+	margin-left: 4%;
+	float: left;
+	transition: 0.7s;
+}
+
+#garde #logo_left:hover{
+	transform: rotate(50deg);
+}
+
+#garde #logo_left:active{
+	transform: rotate(360deg);
+}
+
+#garde #logo_right{
+	margin-right: 4%;
+	float: right;
+	transition: 1s;
+}
+
+#garde #logo_right:hover{
+	transform: rotate(-50deg);
+}
+
+#garde #logo_right:active{
+	transform: rotate(-360deg);
+}
+
+#garde #h1_garde{
+	display: flex;
+	justify-content: center;
+	font-family: 'Staatliches', cursive;
+	font-size : 120px;
+	margin-top: 80px;
+	padding: 20px;
+	-webkit-transition: font-size 1.5s, margin-top 1s, opacity 2s;
+}
+
+#garde #h1_garde:hover{
+	font-size: 100px;
+	margin-top: 60px;
+	opacity: 0.7;
+}
+
+#garde h2 {
+	text-align: center;
+	font-size: 40px;
+	margin-top: -100px;
+}
+
+#garde #p_garde{
+	display: flex;
+	justify-content: center;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 25px;
+	text-align: center;
+	transition: 1s;
+}
+
+#garde #p_garde:hover{
+	font-size: 30px;
+}
 
 
+#promo #promo_h1{
+	margin-top: 80px;
+	text-align: center;
+	transition: 1s;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#promo #promo_h1:hover{
+	font-size: 50px;
+	margin-top: 20px;
+	color: red;
+}
+
+#triangles {
+	display:flex;
+	justify-content: space-around;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.triangle{
+	width:0px;
+	height:0px;
+	margin:10px auto;
+}
+.triangle.down{
+  	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid black;
+	margin-top: -40px;
+	padding-bottom: 20px;
+	transition: 0.5s;
+}
+#triangles #triangle1:hover{
+	transform: rotate(-45deg);
+	border-top: 100px solid #EE4A10;
+}
+#triangles #triangle2:hover{
+	transform: rotate(180deg);
+	border-top: 100px solid white;
+}
+#triangles #triangle3:hover{
+	transform: rotate(45deg);
+	border-top: 100px solid #FFB600;
+}
+
+#promo #promo_h2{
+	text-align: center; 
+	margin-top: 15px;
+	text-decoration:  underline;
+}
 footer{
 	background-color: black;
 	height: 4%;
@@ -245,3 +382,4 @@ footer p a{
 	color: white;
 	text-decoration: none;
 }
+
