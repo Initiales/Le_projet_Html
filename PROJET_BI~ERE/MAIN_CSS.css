@@ -125,19 +125,19 @@ main {
 	margin-left: 20px;
 }
 
-#Recherche {
+#Article {
 	list-style-type: none;
 }
 
 
-#Recherche h1 {
+#Article h1 {
 	font-family: 'Staatliches', cursive;
 	margin-top: 5%;
 	font-size: 70px;
 	text-align: center;
 }
 
-#Recherche #ligne1 p {
+#Article #ligne1 p {
 	background-color: red;
 	width: 40px;
 	height: 40px;
@@ -153,7 +153,7 @@ main {
 }
 
 
-#Recherche ul {
+#Article ul {
 	list-style-type: none; 
 	text-align: center;
 	font-size: 25px;
@@ -161,15 +161,15 @@ main {
 	margin-top: 5px;
 }
 
-#Recherche #Nom {
+#Article #Nom {
 	font-family: 'Staatliches', cursive;
 }
 
-#Recherche ul li {
+#Article ul li {
 	font-family: 'PT Sans Narrow', sans-serif;
 }
 
-#Recherche #ligne1 {
+#Article #ligne1 {
 	display: flex;
 	justify-content: space-around;
 	margin-left: 5%;
@@ -177,7 +177,7 @@ main {
 	margin-top: 60px;
 }
 
-#Recherche #ligne2 {
+#Article #ligne2 {
 	margin-left: ;
 	margin-right: ;
 	margin-top: 5%;
@@ -185,7 +185,7 @@ main {
 	justify-content: space-around;
 }
 
-#Recherche #ligne3 {
+#Article #ligne3 {
 	margin-left: 5%;
 	margin-right: 5%;
 	margin-top: 5%;
@@ -193,7 +193,7 @@ main {
 	justify-content: space-around;
 }
 
-#Recherche img {
+#Article img {
 	border: 2px solid black;
 	border-radius: 35%;
 	display: flex;
@@ -361,6 +361,11 @@ main {
 	text-align: center; 
 	margin-top: 15px;
 	text-decoration:  underline;
+}
+
+#promo #ligne1 {
+	display: flex;
+	justify-content: space-around;
 }
 footer{
 	background-color: black;
