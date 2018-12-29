@@ -2,6 +2,8 @@
 <html lang="fr">
 <head>
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
 	<title>BI~ÈRE - Été~Hiver</title>
 	<link rel="stylesheet" type="text/css" href="MAIN_CSS.css">
 	<meta charset="utf-8">
@@ -26,24 +28,88 @@
 
 	<main>
 	<div id="EH">
-		<h1>Été ~ Hiver</h1>
-		<img src="duff.jpg" width=500>
+
+		<img id="logo_right" src="beer2.png" width="250" alt="logo bière droite">
+	
+		<h1><u><span class="blond">Été</span> ~ <span class="roux">Hiver</span></u></h1>
+
+		<img id="biereEH" src="EH.jpg" alt="biere été-hiver">
+
 		<h2>Caractéristiques</h2>
 		
+		<table>
+
+			<tr>
+				<td id="vide"></td>
+				<th>été</th>
+				<th>hiver</th>
+			</tr>
+
+			<tr>
+				<th>Couleur</th>
+				<td>Brune</td>
+				<td>Blanche</td>
+			</tr>
+
+			<tr>
+				<th>Degré</th>
+				<td colspan="2"><b>4°</b></td>
+			</tr>
+
+			<tr>
+				<th>Format</th>
+				<td colspan="2"><b>33</b> cL</td>
+			</tr>
+
+			<tr>
+				<th>Prix</th>
+				<td colspan="2"><b>8€</b> le duo</td>
+			</tr>
+		</table>
+
+		<div id="avis">
+			<p>Avis :<img id="imgavis" src="étoile.png" alt="étoile avis"></p>
+		</div>
+		<div id="achat">
+			<form method="get" action="Page_Panier.html">
+				<label for="quantité" style="font-size: 40px;">Quantité : &nbsp;<input name="quantité" type="text" id="quantité" placeholder="..."></label>
+				<br>
+				<input type="submit" value="Ajouter au panier" >
+			</form>
+
+		</div>
+
+		<div id="description">
+			<p>Le duo Été~Hiver est le parfait mélange tempéré à déguster tout au long de l'année. Laissez-vous séduire par leur goût unique et mythique. Ces deux bières ont été confectionnées avec un houblon de qualité supérieur pour vous garantir une expérience gustative inoubliable. 
+			</p>
+		</div>
+
+		<h2 id="h2_comm">Commentaires</h2>
+
+		<div id="commentaire">
+			<h3><a href="https://www.youtube.com/channel/UCgC910SfBDjaSwSdkz00cSQ?view_as=subscriber">@gorovsky_</a></h3>
+			<p>Je recommande vivement ce savoureux duo de bières, de quoi rendre jaloux Vivaldi ! <br>
+				Je mets une note de 5 étoiles. A consommer avec modération ;)
+			</p>
+			<h2><span class="blond2">Article</span>&nbsp;<span class="roux2">similaire</span> :</h2>
+
+			<a href="Page_Biere_EH.html"><img src="EH.jpg" alt="article similaire"></a>
+
+			<h3>Ecrivez un commentaire</h3>
 
 
 
+			<form method="get">
+				<TEXTAREA name="positive" rows=10 COLS=60 placeholder="Tapez votre texte ici."></TEXTAREA>
+				<br>
+				<input type="submit" value="Poster le commentaire">
+			</form>
+		</div>
+		<img id="logo_left" src="beer.png" width="250" alt="logo bière gauche">
 
 
+		<div id="espace"><p>FIN</p></div>
 
-
-
-
-
-
-
-
-		
 	</div>
 	</main>
 
