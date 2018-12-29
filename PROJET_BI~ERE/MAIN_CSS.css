@@ -103,6 +103,9 @@ header{
 
 
 main {
+	background-image: url(fond_biere.png);
+	background-repeat: repeat;
+	background-size: 300px;
 	background-color: lightgray;
 	width: 1100px;
 	margin:auto;
@@ -316,6 +319,7 @@ main {
 
 #EH table td{
 	font-family: 'PT Sans Narrow', sans-serif;
+	background-color: lightgray;
 }
 #EH table th{
 	background-color: white;
