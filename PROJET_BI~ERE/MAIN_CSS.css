@@ -155,9 +155,16 @@ main {
 	margin-top: 5%;
 	font-size: 70px;
 	text-align: center;
+	transition: 0.5s;
+}
+#Article h1:hover {
+	font-size: 80px;
 }
 
-#Article #ligne1 p {
+#Article #ligne1 .prix {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	background-color: red;
 	width: 40px;
 	height: 40px;
@@ -165,14 +172,15 @@ main {
 	margin-left: 250px;
 	margin-top: -300px;
 	padding: 5px;
-	text-align: center;
 	font-size: 30px;
 	border: 2px solid black;
 	border-radius: 50%;
 	position: absolute;
+	transition: 0.2s;
 }
-
-
+#Article #ligne1 .prix:hover {
+	font-size: 35px;
+}
 #Article ul {
 	list-style-type: none; 
 	text-align: center;
@@ -181,7 +189,7 @@ main {
 	margin-top: 5px;
 }
 
-#Article #Nom {
+#Article .Nom {
 	font-family: 'Staatliches', cursive;
 }
 
@@ -218,8 +226,12 @@ main {
 	border-radius: 35%;
 	display: flex;
 	justify-content: center;
+	transition: 1s;
 }
 
+#Article img:hover {
+	width: 310px;
+}
 #EH #logo_right{
 	margin-right: 5%;
 	margin-top: -30px;
