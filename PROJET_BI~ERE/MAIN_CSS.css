@@ -36,6 +36,21 @@ a{
 .roux2:hover{
 	color: #EE4A10;
 }
+
+.blond3{
+	transition: 0.5s;
+}
+.blond3:hover{
+	color: #FFB600;
+	font-size: 70px;
+}
+.roux3{
+	transition: 0.5s;
+}
+.roux3:hover{
+	color: #EE4A10;
+	font-size: 70px;
+}
 header{
 	display : flex;
 	justify-content: space-around;
@@ -823,7 +838,8 @@ main {
 	width: 210px;
 	margin-top: 20px;
 	margin-left: 50px;
-
+	background-color:ghostwhite;
+	border:solid black 3px;
 }
 
 #panier #livraison input[type=submit] {
@@ -832,11 +848,28 @@ main {
 	width: 210px;
 	margin-top: 20px;	
 	margin-right: 50px;
+	background-color:ghostwhite;
+	border:solid black 3px;
+}
+
+#livraison input[type=submit] {
+	height: 50px;
+	font-size: 20px;
+	width: 210px;
+	margin-top: 20px;	
+	margin-right: 50px;
+	background-color:ghostwhite;
+	border:solid black 3px;
+	transition: 0.5s
+}
+
+#livraison input[type=submit]:hover {
+	background-color:gray;
 }
 
 
 #livraison #crdn{
-	margin-left:2%; 
+	margin-left:5%; 
 }
 
 #livraison h1 {
@@ -849,6 +882,49 @@ main {
 #livraison h1:hover {
 	font-size: 80px;
 }
+
+#livraison input[type="text"]{
+	border: solid black 2px;
+	padding-left: 3px;
+	width: 15%;
+}
+
+#livraison input[type="text"]:focus{
+	outline: none;
+	background-color: #FFE4C4;
+}
+
+#livraison h2{
+	margin-left:2%;
+}
+
+#livraison #Nom{
+	margin-left: 2.5%;
+}
+#validation p{
+	text-align: center;
+	width: 90%;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 30px;
+	margin-top: 10%;
+	margin-left: 5%;
+}
+#validation h1{
+	margin-top: 10%;
+	font-size: 60px;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s;
+}
+
+#validation h1:hover{
+	font-size: 70px;
+}
+
+#validation{
+	padding-bottom: 30%;
+}
+
 
 
 .espace {
