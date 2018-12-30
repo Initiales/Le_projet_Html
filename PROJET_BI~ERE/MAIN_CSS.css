@@ -224,7 +224,7 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-color: red;
+	background-color: #EE4A10;
 	width: 40px;
 	height: 40px;
 	margin: auto;
@@ -238,7 +238,49 @@ main {
 	transition: 0.2s;
 }
 #Article #ligne1 .prix:hover {
-	font-size: 35px;
+	background-color: #FFB600;
+}
+
+#Article #ligne2 .prix {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #FFB600;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	margin-left: 250px;
+	margin-top: -300px;
+	padding: 5px;
+	font-size: 30px;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: absolute;
+	transition: 0.2s;
+}
+#Article #ligne2 .prix:hover {
+	background-color: #EE4A10;
+}
+
+#Article #ligne3 .prix {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #EE4A10;
+	width: 40px;
+	height: 40px;
+	margin: auto;
+	margin-left: 250px;
+	margin-top: -300px;
+	padding: 5px;
+	font-size: 30px;
+	border: 2px solid black;
+	border-radius: 50%;
+	position: absolute;
+	transition: 0.2s;
+}
+#Article #ligne3 .prix:hover {
+	background-color: #FFB600;
 }
 #Article ul {
 	list-style-type: none; 
@@ -818,9 +860,10 @@ main {
 }
 
 #panier table img{
-	padding-top: 10px;
+	margin-top: 10px;
 	width: 120px;
 	border-radius: 30%;
+	border: 2px solid black;
 }
 
 #panier h2{
@@ -852,24 +895,22 @@ main {
 	border:solid black 3px;
 }
 
+
 #livraison input[type=submit] {
 	height: 50px;
 	font-size: 20px;
 	width: 210px;
-	margin-top: 20px;	
-	margin-right: 50px;
 	background-color:ghostwhite;
 	border:solid black 3px;
 	transition: 0.5s
 }
-
 #livraison input[type=submit]:hover {
 	background-color:gray;
 }
-
-
-#livraison #crdn{
-	margin-left:5%; 
+#livraison #crdn #bouton{
+	margin-top: 50px;
+	text-align: center;
+	width: 105%;
 }
 
 #livraison h1 {
@@ -894,38 +935,148 @@ main {
 	background-color: #FFE4C4;
 }
 
-#livraison h2{
-	margin-left:2%;
+#livraison #crdn{
+	width: 50%;
+}
+#livraison #crdn h2{
+	text-align: center;
+	font-size: 50px;
+	transition: 1s;
+}
+#livraison #crdn h2:hover{
+	font-size: 60px;
 }
 
+#livraison #crdn .ligne{
+	display: flex;
+	justify-content: space-around;
+	font-size: 25px;
+	margin-top: 40px;
+}
+
+#livraison #crdn input{
+	margin-left: -50px;
+}
 #livraison #Nom{
 	margin-left: 2.5%;
 }
+#livraison #logos{
+	margin-top: -30px;
+	display: flex;
+	justify-content: space-around;
+}
+#livraison img{
+	transition: 1s;
+}
+#livraison #logos img:hover{
+	width: 225px;
+}
+
+#livraison #recap{
+	float: right;
+	width: 49.7%;
+	margin-top: -462px;
+}
+#livraison #recap h2{
+	text-align: center;
+	font-size: 50px;
+	transition: 1s;
+}
+#livraison #recap h2:hover{
+	font-size: 60px;
+}
+#livraison #recap img{
+	border: 2px solid black;
+	border-radius: 30%;
+	width: 150px
+}
+#livraison #recap img:hover{
+	width: 160px;
+}
+
+#livraison #recap #articleligne{
+	display: flex;
+	justify-content: space-around;
+	margin-right: 50px;
+	margin-left: 50px;
+}
+
+
+
+
+#validation h1{
+	margin-top: 5%;
+	font-size: 70px;
+	display: flex;
+	justify-content: center;
+	transition: 0.5s;
+	text-align: center;
+}
+
+#validation h1:hover{
+	font-size: 80px;
+}
+
+#validation h2{
+	margin-top: -50px;
+	text-align: center;
+	font-size: 50px;
+	transition: 1s;
+}
+#validation h2:hover{
+	font-size: 60px;
+}
+
 #validation p{
 	text-align: center;
 	width: 90%;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 30px;
-	margin-top: 10%;
+	margin-top: 30px;
 	margin-left: 5%;
 }
-#validation h1{
-	margin-top: 10%;
-	font-size: 60px;
+
+#validation #camion{
+	width: 200px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.7s;
+}
+#validation #camion:hover{
+	filter: invert(1);
+	width: 250px;
+	transform: rotate(-360deg);
+}
+
+#validation #bandeau_fin{
 	display: flex;
-	justify-content: center;
-	transition: 0.5s;
+	justify-content: space-around;
+	align-items: center;
+}
+#validation #logo_right{
+	margin-right: 50px;
+	transition: 1s;
+	width: 150px;
+}
+#validation #logo_right:hover{
+	transform: rotate(-50deg);
+}
+#validation #logo_right:active{
+	transform: rotate(-360deg);
 }
 
-#validation h1:hover{
-	font-size: 70px;
+#validation #logo_left{
+	margin-left: 50px;
+	transition: 1s;
+	width: 150px;
 }
-
-#validation{
-	padding-bottom: 30%;
+#validation #logo_left:hover{
+	transform: rotate(50deg);
 }
-
-
+#validation #logo_left:active{
+	transform: rotate(360deg);
+}
 
 .espace {
 	opacity: 0;

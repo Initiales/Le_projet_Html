@@ -27,19 +27,63 @@
 
 		<h1>Livraison</h1>
 
-
-		<h2> Coordonnées :</h2>
-			
-			<div id="crdn">
-				<label id="Nom">Nom:</label><input type="text" name="Nom" >
-				<label id="Prenom">Prénom:</label><input type="text" name="Prenom" ><br><br>
-				<label id="Adresse">Adresse:</label><input type="text" name="Adresse" >
-				<label id="Cpostal">Code Postal:</label><input type="text" name="Cpostal" ><br>
-				<form method="get" action="Page_validation.html">
-					<input type="submit" value="Et c'est parti!">
-				</form>
-				<br><br>
+		<div id="logos">
+			<div>
+				<img src="localisation.png" alt="point sur la carte" width="200">
 			</div>
+
+			<div>
+				<img src="colis.png" alt="un colis" width="200">
+			</div>
+		</div>
+
+		<div id="crdn">
+
+			<h2> Coordonnées :</h2>
+
+			<div class="ligne">
+				<label id="Nom">Nom:</label><input type="text" name="Nom" >
+			
+				<label id="Prenom">Prénom:</label><input type="text" name="Prenom" ><br><br>
+			</div>
+
+			<div class="ligne">
+				<label id="Adresse" style="margin-left: -50px">Adresse:</label><input type="text" name="Adresse" style="width: 300px; margin-left: -180px;" >
+			</div>
+
+			<div class="ligne">
+				<label id="Ville" style="margin-left: 15px;">Ville:</label><input type="text" name="Nom" >
+
+				<label id="Cpostal" style="margin-left: -50px;">Code Postal:</label><input type="text" name="Cpostal"  style="width: 80px;"><br>
+			</div>
+
+			<div id="bouton">
+				<form method="get" action="Page_validation.html">
+					<input type="submit" value="Et c'est parti !">
+				</form>
+			</div>
+
+
+				<br><br>
+		</div>
+
+		<div id="recap">
+
+			<h2>Récapitulatif</h2>
+
+			<div id="articleligne">
+				<div>
+				<a href="page_biere_eh.html"><img src="EH.jpg" alt="article1"></a>
+				</div>
+
+				<div>
+				<a href="page_biere_eh.html"><img src="KG.png" alt="article1"></a>
+			</div>
+			</div>
+
+			<h2>TOTAL : 42€</h2>
+		</div>
+	<div class="espace"><p>FIN</p></div>
 	</main>
 	<footer>
 		<p>
