@@ -4,7 +4,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
-	<title>BI~ÈRE - Accueil</title>
+	<title>BI~ÈRE - Panier</title>
 	<link rel="stylesheet" type="text/css" href="MAIN_CSS.css">
 	<meta charset="utf-8">
 	<link rel="shortcut icon" type="image/x-icon" href="beer.png"/>
@@ -24,47 +24,63 @@
 	</header>
 
 	<main id="panier">
-		<h1 id="main_h1"> Mon ~ panier </h1> 
-			<table id="p_table">
+
+		<h1><span class="roux2">Mon</span> ~ <span class="blond2">panier</span></h1> 
+
+			<table>
 				<tr>
-					<th id="C1"> Article </th>
-					<th id="C2"> Quantité </th>
-					<th id="C3"> Prix unitaire </th>
-					<th id="C4"> Prix total </th>
+					<th><span class="roux2">Article</span></th>
+					<th><span class="blond2">Quantité</span></th>
+					<th><span class="roux2">Prix &nbsp; unitaire</span></th>
+					<th><span class="blond2">Prix &nbsp; total</span></th>
 				</tr>
 
 				<tr>
-					<td id="C1"> <img id="biere_pan" src="EH.jpg" alt="biere été-hiver" width=150> </td>
-					<td id="C2"> <p>3 </p></td>
-					<td id="C3"> <p>8€ </p></td>
-					<td id="C4"> <p>24€</p> </td>
-				</tr>
-
-				<tr id="fin">
-					<td id="C1"> <img id="biere_pan" src="duff.jpg" alt="biere été-hiver" width=150> </td>
-					<td id="C2"> <p>2 </p></td>
-					<td id="C3"> <p>9€</p> </td>
-					<td id="C4"> <p>18€</p> </td>
+					<td><img src="EH.jpg" alt="biere été-hiver"></td>
+					<td>3</td>
+					<td>8€</td>
+					<td>24€</td>
 				</tr>
 
 				<tr>
-					<td id ="empty"></td>
-					<td id ="empty_2"></td>
-					<td id="C3"> <p> Total à payer:</p></td>
-					<td id="C4"> <p> 42€ </p></td>
+					<td><img src="duff.jpg" alt="biere yin-yang"> </td>
+					<td>2</td>
+					<td>9€</td>
+					<td>18€</td>
+				</tr>
+
+				<tr>
+					<td id="empty"></td>
+					<td id="empty_2"></td>
+					<td>Total à payer:</td>
+					<td>42€</td>
 				</tr>
 			</table>
-			<br>
-			<h1 id="h1"> Coordonnées :</h1>
-			<br>
-			<div id="crdn">
-				<p>Nom:</p><input type="text" name="Name" >
-				<p>Prénom:</p><input type="text" name="Name" >
-				<p>Adresse:</p><input type="text" name="Name" >
-				<p>Code Postal:</p><input type="text" name="Name" ><br>
-				<input type="submit" value="Et c'est parti!">
+
+			<div class="espace"><p>FIN</p></div>
+
+			<div id="triangles">
+				<div class="triangle down" id="triangle1"></div>
+				<div class="triangle down" id="triangle3"></div>
 			</div>
-			<br><br><br>
+
+			<div id="boutons">
+				<form method="get" action="Page_Article.html" id="achat">
+					<input type="submit" value="Continuer mes achats">
+				</form>
+
+
+				<form method="get" action="Page_Livraison.html" id="livraison">
+					<input type="submit" value="Valider mon panier">
+				</form>
+			</div>
+
+			<div class="espace"><p>FIN</p></div>
+
+
+
+			
+		
 	</main>
 			<footer>
 		<p>

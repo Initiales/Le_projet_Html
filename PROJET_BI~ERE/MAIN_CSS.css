@@ -101,7 +101,48 @@ header{
 	margin-right: 10%;
 }
 
+#triangles {
+	display:flex;
+	justify-content: space-around;
+	margin-left: 50px;
+	margin-right: 50px;
+}
+.triangle{
+	width:0px;
+	height:0px;
+	margin:10px auto;
+}
+.triangle.down{
+  	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-top: 100px solid black;
+	margin-top: 0px;
+	padding-bottom: 20px;
+	transition: 0.5s;
+}
+#triangles #triangle1:hover{
+	transform: rotate(-45deg);
+	border-top: 100px solid #EE4A10;
+}
+#triangles #triangle1:active{
+	transform: rotate(-405deg);
+}
 
+#triangles #triangle2:hover{
+	transform: rotate(180deg);
+	border-top: 100px solid white;
+}
+#triangles #triangle2:active{
+	transform: rotate(360deg);
+}
+
+#triangles #triangle3:hover{
+	transform: rotate(45deg);
+	border-top: 100px solid #FFB600;
+}
+#triangles #triangle3:active{
+	transform: rotate(405deg);
+}
 main {
 	background-image: url(fond_biere.png);
 	background-repeat: repeat;
@@ -517,48 +558,6 @@ main {
 	color: red;
 }
 
-#triangles {
-	display:flex;
-	justify-content: space-around;
-	margin-left: 50px;
-	margin-right: 50px;
-}
-.triangle{
-	width:0px;
-	height:0px;
-	margin:10px auto;
-}
-.triangle.down{
-  	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: 100px solid black;
-	margin-top: 0px;
-	padding-bottom: 20px;
-	transition: 0.5s;
-}
-#triangles #triangle1:hover{
-	transform: rotate(-45deg);
-	border-top: 100px solid #EE4A10;
-}
-#triangles #triangle1:active{
-	transform: rotate(-405deg);
-}
-
-#triangles #triangle2:hover{
-	transform: rotate(180deg);
-	border-top: 100px solid white;
-}
-#triangles #triangle2:active{
-	transform: rotate(360deg);
-}
-
-#triangles #triangle3:hover{
-	transform: rotate(45deg);
-	border-top: 100px solid #FFB600;
-}
-#triangles #triangle3:active{
-	transform: rotate(405deg);
-}
 #promo #promo_h2{
 	text-align: center; 
 	margin-top: 0px;
@@ -711,109 +710,139 @@ main {
 
 
 
-#mention h1{
-	display:flex;
-	justify-content: center;
+#mention h1 {
 	font-family: 'Staatliches', cursive;
-	font-size: 45px;
+	margin-top: 5%;
+	font-size: 70px;
+	text-align: center;
+	transition: 0.5s;
+}
+#mention h1:hover {
+	font-size: 80px;
 }
 
-#mention #site{
-	margin-top: 5px;
-}
 
 #mention p{
 	text-align: justify;
 	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 }
 
-#box1{
-	margin-left:10%;
-	padding-left:10%;
+.box{
+	text-align: justify;
+	margin: auto;
+	padding-left:5%;
+	padding-right: 5%;
+	border: 1px solid transparent;
 	border-left: solid black 8px;
-
+	margin-bottom: 70px;
+	transition: 1s;
+	width: 60%;
 }
 
-#box2{
-	margin-left:10%;
-	padding-left:10%;
-	border-left: solid black 8px;
-	margin-bottom: 40px;
+.box:hover{
+	border: 8px solid black;
+	background-color: white;
 }
 
-#panier #p_table{
-	width: 85%;
-	margin-left: 2.5%;
-}
 
-#panier img{
-	margin-right: 0px;
-}
-
-#panier #main_h1{
-	display: flex;
-	justify-content: center;
+#panier h1 {
+	font-family: 'Staatliches', cursive;
+	margin-top: 5%;
 	font-size: 70px;
+	text-align: center;
+	transition: 0.5s;
+}
+#panier h1:hover {
+	font-size: 80px;
 }
 
-#panier #h1{
+#panier table{
+	margin: auto;
+	width: 80%;
+	border-collapse: collapse;
+}
+
+#panier table #empty{
+	border-color:transparent;
+	background-color: lightgrey;
+}
+
+#panier table #empty_2{
+	border-bottom-color: transparent;
+	background-color: lightgrey;
+}
+
+#panier table td{
+	text-align: center;
+	height: 110px;
+	width:200px;
+	font-size: 30px;
+	background-color: lightgrey;
+	transition: 0.5s;
+		border: 2px solid black;
+}
+
+#panier table td:hover{
+	background-color: white;
+	font-size: 35px;
+}
+#panier table th {
+	font-size: 35px;
+	padding: 10px;
+	transition: 0.5s;
+}
+
+#panier table img{
+	padding-top: 10px;
+	width: 120px;
+	border-radius: 30%;
+}
+
+#panier h2{
 	font-size: 50px;
 	margin-left:3%;
 }
 
-#C1{
-	width:150px;
-}
-
-#panier td{
-	height: 150px;
-}
-
-#panier #p_table #td{
+#panier #boutons{
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
 }
-
-#panier #p_table td p{
-	display: flex;
-	justify-content: flex-end;
-	font-size: 30px;
-}
-
-#panier #p_table th {
-	font-size: 35px;
-}
-
-
-#empty{
-	border-color:transparent;
-}
-
-#empty_2{
-	border-bottom-color: transparent;
-}
-
-
-#panier #p_table{
-	border-collapse: collapse;
+#panier #achat input[type=submit] {
+	height: 50px;
+	font-size: 20px;
+	width: 210px;
+	margin-top: 20px;
+	margin-left: 50px;
 
 }
 
-#panier #p_table img{
-	border-radius: 50%;
+#panier #livraison input[type=submit] {
+	height: 50px;
+	font-size: 20px;
+	width: 210px;
+	margin-top: 20px;	
+	margin-right: 50px;
 }
 
-#crdn{
+
+#livraison #crdn{
 	margin-left:2%; 
 }
 
+#livraison h1 {
+	font-family: 'Staatliches', cursive;
+	margin-top: 5%;
+	font-size: 70px;
+	text-align: center;
+	transition: 0.5s;
+}
+#livraison h1:hover {
+	font-size: 80px;
+}
 
 
-
-
-
-#espace {
+.espace {
 	opacity: 0;
 	margin-top: 50px;
 }
