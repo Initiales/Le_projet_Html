@@ -656,13 +656,22 @@ main {
 	margin-top: 5%;
 	font-size: 70px;
 	text-align: center;
+	transition: 1s;
+}
+#Recherche h1:hover{
+	font-size: 80px;
 }
 #Recherche h2 {
 	font-family: 'Staatliches', cursive;
 	margin-top: -10px;
 	font-size: 50px;
 	text-align: center;
+	transition: 1s;
 }
+#Recherche h2:hover {
+	font-size: 60px;
+}
+
 #Recherche ul {
 	list-style-type: none; 
 	text-align: center;
